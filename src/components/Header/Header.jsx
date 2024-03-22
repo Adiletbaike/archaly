@@ -2,20 +2,22 @@ import React, { useState } from "react";
 
 const Header = () => {
   return (
-    <header className="bg-green-100 body-font">
-      <div className="container mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
+    <header className="bg-[url('/images/hero.jpg')] bg-top body-font">
+      <div className="container mx-auto flex flex-wrap p-2 md:flex-row items-center">
         <a className="flex title-font font-medium items-center text-gray-900 mb-1 md:mb-0">
-          <img src="../public/logo.png" width="60" alt="" />
+          <img src="/logo.png" width="80" alt="" />
         </a>
-        <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <nav className="md:ml-auto md:mr-auto flex flex-wrap font-hero items-center text-xl cursor-pointer justify-center">
           <a className="mr-5 hover:text-gray-900">Башкы бет</a>
+          <a className="mr-5 hover:text-gray-900">Реквизит</a>
           <a className="mr-5 hover:text-gray-900">Биз жөнүндө</a>
           <a className="mr-5 hover:text-gray-900">Мугалимдер</a>
+          <a className="mr-5 hover:text-gray-900">Жаңылыктар</a>
           <a className="mr-5 hover:text-gray-900">Галерия</a>
           <a className="mr-5 hover:text-gray-900">Байланыш</a>
         </nav>
         <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-          <a class="text-gray-500">
+          <a class="text-bgGreen">
             <svg
               fill="currentColor"
               stroke-linecap="round"
@@ -27,19 +29,7 @@ const Header = () => {
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
             </svg>
           </a>
-          <a class="ml-3 text-gray-500">
-            <svg
-              fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
+          <a class="ml-3 text-bgGreen">
             <svg
               fill="none"
               stroke="currentColor"
@@ -51,23 +41,6 @@ const Header = () => {
             >
               <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
               <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </a>
-          <a class="ml-3 text-gray-500">
-            <svg
-              fill="currentColor"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="0"
-              class="w-5 h-5"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="none"
-                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-              ></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
             </svg>
           </a>
         </span>

@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section class="body-font relative bg-green-50">
+    <section class="bg-[url('/images/counter-bg.jpg')] body-font relative ">
       <div class="container px-2 py-10 mx-auto">
         <div class="flex flex-col text-center w-full mb-12">
           <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 font-hero">
@@ -18,7 +18,7 @@ const About = () => {
             ullam nulla commodi nemo voluptas vitae.
           </p>
         </div>
-        <div class="flex flex-wrap -m-4 text-center">
+        <div class="flex flex-wrap  m-0 text-center">
           <div class="p-4 sm:w-1/4 w-1/2">
             <h2 class="title-font font-medium sm:text-4xl text-3xl text-gray-900">
               20

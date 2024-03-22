@@ -7,6 +7,9 @@ export default {
         hero: ["El Messiri"],
         subHero : ["Forum"]
       },
+      colors : {
+        'bgGreen' : '#005d12'
+      },
     },
   },
   plugins: [],
