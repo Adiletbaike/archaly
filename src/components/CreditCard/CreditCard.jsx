@@ -15,7 +15,7 @@ const CreditCard = () => {
           <h1 class="title-font sm:text-4xl text-3xl mb-4 mx-auto font-hero text-gray-900">
             Банктык эсептер
           </h1>
-          <div className="flex flex-wrap font-subHero gap-3 text-3xl w-full text-center items-center text-black">
+          <div className="flex flex-wrap w-1/2 font-subHero gap-3 text-3xl md:w-full text-center items-center text-black">
             <div className="bg-black p-2 rounded-xl bg-opacity-25 w-2/5 mx-auto">
               <h4> Оптима Банк</h4>
               <p>4169 5853 5559 7583</p>
