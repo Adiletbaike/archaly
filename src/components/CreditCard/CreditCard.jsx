@@ -11,16 +11,16 @@ const CreditCard = () => {
             src="/images/credit.png"
           />
         </div>
-        <div class="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-center md:text-left items-center text-center">
+        <div class="lg:flex-grow md:w-1/2 lg:pl-10 md:pl-16 flex flex-col md:items-center md:text-left items-center text-center">
           <h1 class="title-font sm:text-4xl text-3xl mb-4 mx-auto font-hero text-gray-900">
             Банктык эсептер
           </h1>
-          <div className="flex flex-wrap font-subHero gap-3 text-4xl text-center text-black">
-            <div className="bg-black p-2 rounded-xl bg-opacity-25">
+          <div className="flex flex-wrap font-subHero gap-3 text-3xl w-full text-center items-center text-black">
+            <div className="bg-black p-2 rounded-xl bg-opacity-25 w-2/5 mx-auto">
               <h4> Оптима Банк</h4>
               <p>4169 5853 5559 7583</p>
             </div>
-            <div className="bg-black p-2 rounded-xl bg-opacity-25">
+            <div className="bg-black p-2 rounded-xl bg-opacity-25 w-2/5 mx-auto">
               <h4>Mбанк</h4>
               <p className="mx-auto">+996 507 45 95 40</p>
             </div>
