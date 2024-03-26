@@ -3,7 +3,7 @@ import React from "react";
 const CreditCard = () => {
   return (
     <section
-      className="bg-[url('/images/credit-bg1.jpg')] text-gray-600 body-font"
+      className="bg-[url('/images/credit-bg.jpg')] bg-contain text-gray-600 body-font"
       id="rekvizit"
     >
       <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
@@ -25,7 +25,7 @@ const CreditCard = () => {
             </div>
             <div className="bg-black p-2 rounded-xl bg-opacity-25 w-[300px] mx-auto">
               <h4>Mбанк</h4>
-              <p className="mx-auto">+996 507 45 95 40</p>
+              <p className="mx-auto no-underline">+996 507 45 95 40</p>
             </div>
           </div>
         </div>

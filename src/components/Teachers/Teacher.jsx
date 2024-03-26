@@ -3,10 +3,10 @@ import React from "react";
 const Teacher = () => {
   return (
     <section
-      className="bg-[url('/images/credit-bg1.jpg')] h-[600px] bg-no-repeat bg-contain body-font"
+      className="bg-[url('/images/credit-bg.jpg')] bg-contain bg-center body-font"
       id="teacher"
     >
-      <div className="container px-5 py-12 mx-auto">
+      <div className="container px-5 py-10 mx-auto">
         <div className="flex flex-col text-center w-full mb-10">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 font-hero">
             Мугалимдер
@@ -22,9 +22,9 @@ const Teacher = () => {
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
-                  Alper Kamu
+                  Абдушукур уулу Имран
                 </h2>
-                <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                <h3 className="text-gray-500 mb-3">Куран мугалими</h3>
               </div>
             </div>
           </div>
@@ -37,9 +37,9 @@ const Teacher = () => {
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
-                  Alper Kamu
+                  Шамов Рахматулло
                 </h2>
-                <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                <h3 className="text-gray-500 mb-3">Куран мугалими</h3>
               </div>
             </div>
           </div>
@@ -52,9 +52,9 @@ const Teacher = () => {
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
-                  Alper Kamu
+                  Шамов Сайфулло
                 </h2>
-                <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                <h3 className="text-gray-500 mb-3">Куран мугалими</h3>
               </div>
             </div>
           </div>
@@ -67,9 +67,9 @@ const Teacher = () => {
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
-                  Alper Kamu
+                  Шамов Инеятулло
                 </h2>
-                <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                <h3 className="text-gray-500 mb-3">Куран мугалими</h3>
               </div>
             </div>
           </div>
@@ -82,9 +82,9 @@ const Teacher = () => {
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
-                  Alper Kamu
+                  Саттаров Одилжан
                 </h2>
-                <h3 className="text-gray-500 mb-3">UI Developer</h3>
+                <h3 className="text-gray-500 mb-3">Куран мугалими</h3>
               </div>
             </div>
           </div>

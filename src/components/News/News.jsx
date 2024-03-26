@@ -15,11 +15,11 @@ const News = () => {
               <img
                 alt="content"
                 className="object-cover object-center h-full w-full"
-                src="https://dummyimage.com/1203x503"
+                src="/images/IMG_1.JPG"
               />
             </div>
             <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-              Shooting Stars
+              Устаздар
             </h2>
             <p className="text-base leading-relaxed mt-2">
               Swag shoivdigoitch literally meditation subway tile tumblr
@@ -27,7 +27,7 @@ const News = () => {
               ethical XOXO lumbersexual.
             </p>
             <a className="text-indigo-500 inline-flex items-center mt-3">
-              Learn More
+              Толугураак
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -46,11 +46,11 @@ const News = () => {
               <img
                 alt="content"
                 className="object-cover object-center h-full w-full"
-                src="https://dummyimage.com/1204x504"
+                src="/images/IMG_2.JPG"
               />
             </div>
             <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-              The Catalyzer
+              Устаздар
             </h2>
             <p className="text-base leading-relaxed mt-2">
               Swag shoivdigoitch literally meditation subway tile tumblr
@@ -58,7 +58,7 @@ const News = () => {
               ethical XOXO lumbersexual.
             </p>
             <a className="text-indigo-500 inline-flex items-center mt-3">
-              Learn More
+              Толугураак
               <svg
                 fill="none"
                 stroke="currentColor"
@@ -77,11 +77,11 @@ const News = () => {
               <img
                 alt="content"
                 className="object-cover object-center h-full w-full"
-                src="https://dummyimage.com/1205x505"
+                src="/images/IMG_3.JPG"
               />
             </div>
             <h2 className="text-xl font-medium title-font text-gray-900 mt-5">
-              The 400 Blows
+              Устаздар
             </h2>
             <p className="text-base leading-relaxed mt-2">
               Swag shoivdigoitch literally meditation subway tile tumblr
@@ -89,7 +89,7 @@ const News = () => {
               ethical XOXO lumbersexual.
             </p>
             <a className="text-indigo-500 inline-flex items-center mt-3">
-              Learn More
+              Толугураак
               <svg
                 fill="none"
                 stroke="currentColor"
