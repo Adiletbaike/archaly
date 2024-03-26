@@ -1,6 +1,8 @@
-import React from "react";
-
+import React, { useState } from "react";
+import CountUp from "react-countup";
+import ScrollTrigger from "react-scroll-trigger";
 const About = () => {
+  const [counterOn, setCounterOn] = useState(false);
   return (
     <section
       className="bg-[url('/images/counter-bg.jpg')] body-font relative "
@@ -21,36 +23,53 @@ const About = () => {
             ullam nulla commodi nemo voluptas vitae.
           </p>
         </div>
-        <div className="flex flex-wrap  m-0 text-center">
-          <div className="p-4 sm:w-1/4 w-1/2">
-            <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
-              20
-            </h2>
-            <p className="leading-relaxed font-subHero text-xl font-bold">
-              Мугалим
-            </p>
+        <ScrollTrigger
+          onEnter={() => setCounterOn(true)}
+          onExit={() => setCounterOn(false)}
+        >
+          <div className="flex flex-wrap  m-0 text-center">
+            <div className="p-4 sm:w-1/4 w-1/2">
+              <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
+                {counterOn && (
+                  <CountUp start={0} end={20} duration={2} delay={0} />
+                )}
+              </h2>
+              <p className="leading-relaxed font-subHero text-xl font-bold">
+                Мугалим
+              </p>
+            </div>
+            <div className="p-4 sm:w-1/4 w-1/2">
+              <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
+                {counterOn && (
+                  <CountUp start={0} end={18} duration={2} delay={0} />
+                )}
+              </h2>
+              <p className="leading-relaxed font-subHero text-xl font-bold">
+                Окуучу
+              </p>
+            </div>
+            <div className="p-4 sm:w-1/4 w-1/2">
+              <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
+                {counterOn && (
+                  <CountUp start={0} end={100} duration={2} delay={0} />
+                )}
+              </h2>
+              <p className="leading-relaxed font-subHero text-xl font-bold">
+                Бүтүрүүчү
+              </p>
+            </div>
+            <div className="p-4 sm:w-1/4 w-1/2">
+              <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
+                {counterOn && (
+                  <CountUp start={0} end={4} duration={2} delay={0} />
+                )}
+              </h2>
+              <p className="leading-relaxed font-subHero text-xl font-bold">
+                Устаз
+              </p>
+            </div>
           </div>
-          <div className="p-4 sm:w-1/4 w-1/2">
-            <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
-              18
-            </h2>
-            <p className="leading-relaxed font-subHero text-xl font-bold">Окуучу</p>
-          </div>
-          <div className="p-4 sm:w-1/4 w-1/2">
-            <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
-              35
-            </h2>
-            <p className="leading-relaxed font-subHero text-xl font-bold">
-              Бүтүрүүчү
-            </p>
-          </div>
-          <div className="p-4 sm:w-1/4 w-1/2">
-            <h2 className="title-font font-medium sm:text-4xl text-3xl text-gray-900">
-              4
-            </h2>
-            <p className="leading-relaxed font-subHero text-xl font-bold">Устаз</p>
-          </div>
-        </div>
+        </ScrollTrigger>
       </div>
     </section>
   );

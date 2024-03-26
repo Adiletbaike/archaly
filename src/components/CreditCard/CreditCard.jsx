@@ -2,7 +2,10 @@ import React from "react";
 
 const CreditCard = () => {
   return (
-    <section className="bg-[url('/images/credit-bg.jpg')] text-gray-600 body-font" id="rekvizit">
+    <section
+      className="bg-[url('/images/credit-bg1.jpg')] text-gray-600 body-font"
+      id="rekvizit"
+    >
       <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
           <img
