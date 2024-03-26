@@ -138,7 +138,7 @@ const Footer = () => {
             </h2>
             <nav className="list-none mb-10 text-gray-600 ">
               <p className="hover:text-gray-300">Оптима банк - 4169 5853 5559 7583</p>
-              <p className="hover:text-gray-300">Mбанк - +996 507 45 95 40</p>
+              <p className="hover:text-gray-300">Mбанк - 996 507 45 95 40</p>
             </nav>
           </div>
         </div>

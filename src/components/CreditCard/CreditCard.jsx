@@ -1,6 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
+import { MdContentCopy } from "react-icons/md";
+import { FaCheck } from "react-icons/fa";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 const CreditCard = () => {
+  const [optima, setOptime] = useState("4169585355597583");
+  const [mBank, setMBank] = useState("996507459540");
+  const [copySuccess, setCopySuccess] = useState({
+    optima: false,
+    mBank: false,
+  });
+
+  const handleCopy = (text, cardType) => {
+    setCopySuccess({ ...copySuccess, [cardType]: true });
+    setTimeout(() => {
+      setCopySuccess({ ...copySuccess, [cardType]: false });
+    }, 3000);
+  };
+
   return (
     <section
       className="bg-[url('/images/credit-bg.jpg')] bg-contain text-gray-600 body-font"
@@ -20,12 +37,36 @@ const CreditCard = () => {
           </h1>
           <div className="flex flex-wrap font-subHero gap-3 text-3xl w-full text-center items-center text-black">
             <div className="bg-black p-2 rounded-xl bg-opacity-25 w-[300px] mx-auto">
-              <h4> Оптима Банк</h4>
-              <p>4169 5853 5559 7583</p>
+              <div className="flex justify-around items-center">
+                <h4> Оптима Банк</h4>
+                <CopyToClipboard
+                  text={optima}
+                  onCopy={() => handleCopy(optima, "optima")}
+                >
+                  {copySuccess.optima ? (
+                    <FaCheck className="text-[30px] text-gray-700 border border-gray-700 rounded-lg p-1 cursor-pointer" />
+                  ) : (
+                    <MdContentCopy className="text-[30px] text-gray-700 border border-gray-700 rounded-lg p-1 cursor-pointer" />
+                  )}
+                </CopyToClipboard>
+              </div>
+              <p>{optima}</p>
             </div>
             <div className="bg-black p-2 rounded-xl bg-opacity-25 w-[300px] mx-auto">
-              <h4>Mбанк</h4>
-              <p className="mx-auto no-underline">+996 507 45 95 40</p>
+              <div className="flex justify-around items-center">
+                <h4>Mбанк</h4>
+                <CopyToClipboard
+                  text={mBank}
+                  onCopy={() => handleCopy(mBank, "mBank")}
+                >
+                  {copySuccess.mBank ? (
+                    <FaCheck className="text-[30px] text-gray-700 border border-gray-700 rounded-lg p-1 cursor-pointer" />
+                  ) : (
+                    <MdContentCopy className="text-[30px] text-gray-700 border border-gray-700 rounded-lg p-1 cursor-pointer" />
+                  )}
+                </CopyToClipboard>
+              </div>
+              <p className="mx-auto no-underline">{mBank}</p>
             </div>
           </div>
         </div>

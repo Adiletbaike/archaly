@@ -24,10 +24,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const closeMenu = () => setOpen(false);
   return (
-    <header
-      className="bg-[url('/images/hero.jpg')] bg-top body-font"
-      id="header"
-    >
+    <header className="bg-green-900 bg-opacity-40 bg-top body-font" id="header">
       <div className="container mx-auto flex flex-wrap p-2 md:flex-row items-center">
         <Link
           spy={true}
@@ -47,7 +44,7 @@ const Header = () => {
           className={`md:ml-auto md:mr-auto absolute md:static flex font-bold flex-col md:flex-row font-hero items-center text-xl cursor-pointer justify-center ${
             open
               ? "right-10 bg-green-700 gap-4 p-2 top-24 bg-opacity-90 w-80 rounded-lg transition-all duration-500 ease-in-out"
-              : "right-[-1000px] transition-all gap-4 top-24 duration-1000 ease-in-out"
+              : "right-[-1000px] transition-all gap-4 top-24 duration-1000 ease-in-out hidden md:flex"
           }`}
         >
           <Link
