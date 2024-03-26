@@ -8,7 +8,8 @@ export default {
         subHero : ["Forum"]
       },
       colors : {
-        'bgGreen' : '#005d12'
+        'bgGreen' : '#005d12',
+        'bgBlue' : '#457DC0'
       },
     },
   },

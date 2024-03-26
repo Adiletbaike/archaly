@@ -43,7 +43,7 @@ const Header = () => {
         <nav
           className={`md:ml-auto md:mr-auto absolute md:static flex font-bold flex-col md:flex-row font-hero items-center text-xl cursor-pointer justify-center ${
             open
-              ? "right-10 bg-green-700 gap-4 p-2 top-24 bg-opacity-90 w-80 rounded-lg transition-all duration-500 ease-in-out"
+              ? "right-10 bg-green-700 gap-4 p-2 top-28 bg-opacity-90 w-80 rounded-lg transition-all duration-500 ease-in-out"
               : "right-[-1000px] transition-all gap-4 top-24 duration-1000 ease-in-out hidden md:flex"
           }`}
         >
@@ -111,7 +111,7 @@ const Header = () => {
             Байланыш
           </Link>
 
-          <span className="inline-flex sm:ml-auto sm:mt-0 mt-0 border border-green-700 rounded-lg py-1 px-2 bg-gray-400 justify-center sm:justify-start">
+          <span className="inline-flex sm:ml-auto sm:mt-0 mt-0 border border-green-700 rounded-lg py-1 px-2 bg-green-600 bg-opacity-90 justify-center sm:justify-start">
             <a
               className="text-black md:text-bgGreen"
               href="https://www.facebook.com/archaly.medresesi"
