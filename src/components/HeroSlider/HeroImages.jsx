@@ -6,7 +6,7 @@ import HeroSlider from "./HeroSlider";
 const HeroImages = () => {
   const slide = [
     {
-      image: "/images/IMG_1.JPG",
+      image: "/images/hero.jpg",
       title: "Арчалы",
       description: "«Силердин эң жакшыңар - куранды үйрөнүп аны башкаларга үйрөткөнүңөр.»",
     },
