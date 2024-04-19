@@ -22,7 +22,7 @@ const HeroSlider = ({ slides }) => {
   }, [currentSlide, slides.length]);
 
   return (
-    <section className="relative h-96 md:h-screen overflow-hidden">
+    <section className="relative h-[600px] md:h-screen overflow-hidden">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -37,10 +37,10 @@ const HeroSlider = ({ slides }) => {
         >
           <div className="container mx-auto h-full flex items-center justify-center">
             <div className="text-center">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-hero text-green-800 leading-tight mb-4">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-hero text-green-800 leading-tight mb-24">
                 {slide.title}
               </h1>
-              <p className="text-xl sm:text-2xl md:text-3xl text-green-800 font-subHero leading-relaxed mb-8">
+              <p className="bg-white bg-opacity-50 p-2 rounded-lg text-xl sm:text-2xl md:text-3xl text-green-800 font-subHero leading-relaxed mb-2">
                 {slide.description}
               </p>
             </div>
