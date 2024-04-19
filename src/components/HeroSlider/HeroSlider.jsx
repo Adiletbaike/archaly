@@ -48,13 +48,13 @@ const HeroSlider = ({ slides }) => {
         </div>
       ))}
       <button
-        className="absolute top-1/2 transform -translate-y-1/2 left-4 text-white text-xl bg-black bg-opacity-50 px-4 py-2 rounded-lg"
+        className="absolute top-1/2 transform -translate-y-1/2 left-4 text-white text-xl bg-green-700 bg-opacity-50 px-4 py-2 rounded-lg"
         onClick={prevSlide}
       >
         <img src="/images/arrow-prev.png" alt="" style={{width: '20px'}} />
       </button>
       <button
-        className="absolute top-1/2 transform -translate-y-1/2 right-4 text-white text-xl bg-black bg-opacity-50 px-4 py-2 rounded-lg"
+        className="absolute top-1/2 transform -translate-y-1/2 right-4 text-white text-xl bg-green-700 bg-opacity-50 px-4 py-2 rounded-lg"
         onClick={nextSlide}
       >
         <img src="/images/arrow-next.png" alt="" style={{width: '20px'}} />

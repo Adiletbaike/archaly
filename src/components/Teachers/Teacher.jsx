@@ -18,13 +18,28 @@ const Teacher = () => {
               <img
                 alt="team"
                 className="flex-shrink-0 rounded-lg object-cover object-center mb-4"
-                src="/images/frame2.png"
+                src="/images/1.png"
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
-                  Абдушукур уулу Имран
+                  Абдишүкүр уулу Имран
                 </h2>
-                <h3 className="text-gray-500 mb-3">Куран мугалими</h3>
+                <h3 className="text-gray-500 mb-3">Мүдүр</h3>
+              </div>
+            </div>
+          </div>
+          <div className="p-4 lg:w-1/5 md:w-1/2">
+            <div className="h-full flex flex-col items-center text-center">
+              <img
+                alt="team"
+                className="flex-shrink-0 rounded-lg object-cover object-center mb-4"
+                src="/images/4.png"
+              />
+              <div className="w-full">
+                <h2 className="title-font font-medium text-lg text-gray-900">
+                  Шамов Инаятулла
+                </h2>
+                <h3 className="text-gray-500 mb-3">Завуч</h3>
               </div>
             </div>
           </div>
@@ -52,27 +67,13 @@ const Teacher = () => {
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
-                  Шамов Сайфулло
+                  Шамов Сайфулла
                 </h2>
                 <h3 className="text-gray-500 mb-3">Куран мугалими</h3>
               </div>
             </div>
           </div>
-          <div className="p-4 lg:w-1/5 md:w-1/2">
-            <div className="h-full flex flex-col items-center text-center">
-              <img
-                alt="team"
-                className="flex-shrink-0 rounded-lg object-cover object-center mb-4"
-                src="/images/4.png"
-              />
-              <div className="w-full">
-                <h2 className="title-font font-medium text-lg text-gray-900">
-                  Шамов Инеятулло
-                </h2>
-                <h3 className="text-gray-500 mb-3">Куран мугалими</h3>
-              </div>
-            </div>
-          </div>
+
           <div className="p-4 lg:w-1/5 md:w-1/2">
             <div className="h-full flex flex-col items-center text-center">
               <img
