@@ -24,7 +24,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   const closeMenu = () => setOpen(false);
   return (
-    <header className="bg-green-900 bg-opacity-40 bg-top body-font" id="header">
+    <header className="bg-green-900 bg-opacity-40 bg-top body-font block" id="header">
       <div className="container mx-auto flex flex-wrap p-2 md:flex-row items-center">
         <Link
           spy={true}

@@ -7,11 +7,13 @@ import Gallery from "./components/Gallery/Gallery";
 import Footer from "./components/Footer/Footer";
 import CreditCard from "./components/CreditCard/CreditCard";
 import News from "./components/News/News";
+import HeroImages from "./components/HeroSlider/HeroImages";
 function App() {
   return (
     <>
       <Header />
-      <Hero />
+      <HeroImages/>
+      {/* <Hero /> */}
       <CreditCard />
       <About />
       <Teacher />
