@@ -33,11 +33,11 @@ const Teacher = () => {
               <img
                 alt="team"
                 className="flex-shrink-0 rounded-lg object-cover object-center mb-4"
-                src="/images/frame2.png"
+                src="/images/2.png"
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
-                  Шамов Рахматулло
+                  Шамов Рахматулла
                 </h2>
                 <h3 className="text-gray-500 mb-3">Куран мугалими</h3>
               </div>
@@ -48,7 +48,7 @@ const Teacher = () => {
               <img
                 alt="team"
                 className="flex-shrink-0 rounded-lg object-cover object-center mb-4"
-                src="/images/frame2.png"
+                src="/images/3.png"
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
@@ -63,7 +63,7 @@ const Teacher = () => {
               <img
                 alt="team"
                 className="flex-shrink-0 rounded-lg object-cover object-center mb-4"
-                src="/images/frame2.png"
+                src="/images/4.png"
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
@@ -78,7 +78,7 @@ const Teacher = () => {
               <img
                 alt="team"
                 className="flex-shrink-0 rounded-lg object-cover object-center mb-4"
-                src="/images/frame2.png"
+                src="/images/5.png"
               />
               <div className="w-full">
                 <h2 className="title-font font-medium text-lg text-gray-900">
