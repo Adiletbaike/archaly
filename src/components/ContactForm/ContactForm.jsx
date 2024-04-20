@@ -17,7 +17,7 @@ const ContactForm = () => {
               id="email"
               name="email"
               placeholder="+996000000000"
-              className="w-full bg-white bg-transparent rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder-gray-900"
+              className="w-full bg-transparent rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-white py-1 px-3 leading-8 transition-colors duration-200 ease-in-out placeholder-gray-200"
             />
           </div>
           <div className="relative mb-4">
