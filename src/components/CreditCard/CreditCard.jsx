@@ -138,9 +138,9 @@ const CreditCard = () => {
                 </CopyToClipboard>
               </div>
             </div>
-            <div className="bg-black p-2 rounded-xl bg-opacity-25 w-[300px] mx-auto">
-              <img src="/images/mbank.svg" alt="" style={{ height: "30px" }} className="mx-auto"/>
-              <div className="flex justify-around items-center h-[50px]">
+            <div className="bg-black p-2 rounded-xl bg-opacity-25 w-[300px] mx-auto  h-[110px]">
+              <img src="/images/mbank.svg" alt="" style={{ height: "40px" }} className="mx-auto"/>
+              <div className="flex justify-around items-center mt-4">
                 <p className="mx-auto no-underline">{mBank}</p>
                 <CopyToClipboard
                   text={mBank}

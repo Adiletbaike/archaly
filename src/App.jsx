@@ -8,6 +8,7 @@ import Footer from "./components/Footer/Footer";
 import CreditCard from "./components/CreditCard/CreditCard";
 import News from "./components/News/News";
 import HeroImages from "./components/HeroSlider/HeroImages";
+import ContactForm from "./components/ContactForm/ContactForm";
 function App() {
   return (
     <>
@@ -19,6 +20,7 @@ function App() {
       <Teacher />
       <News />
       <Gallery />
+      <ContactForm/>
       <Footer />
     </>
   );

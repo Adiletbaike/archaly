@@ -30,7 +30,7 @@ const Header = () => {
     >
       <div>
         <p className="bg-white bg-opacity-50 tracking-widest flex justify-center text-xs p-1 text-center md:text-sm">
-          Кыргызстан республикасы, Аламүдүн району, Арчалы айылы, Көчөк көчөсү,
+          Кыргыз республикасы, Аламүдүн району, Арчалы айылы, Көчөк көчөсү,
           88а
         </p>
       </div>
@@ -50,7 +50,7 @@ const Header = () => {
           {open ? <RiCloseCircleLine /> : <RiMenu4Fill />}
         </div>
         <nav
-          className={`md:ml-auto z-50 md:mr-auto absolute md:static flex font-bold flex-col md:flex-row font-hero items-center text-xl cursor-pointer justify-center ${
+          className={`md:ml-auto z-50 md:mr-auto absolute md:static flex font-bold flex-col md:flex-row font-hero items-center text-md cursor-pointer justify-center${
             open
               ? "right-10 bg-green-700 gap-4 p-2 top-36 bg-opacity-90 w-80 rounded-lg transition-all duration-500 ease-in-out"
               : "right-[-1000px] transition-all gap-4 top-24 duration-1000 ease-in-out hidden md:flex"
