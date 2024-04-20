@@ -43,12 +43,12 @@ const HeroSlider = ({ slides, hadith }) => {
           backgroundPosition: "center",
         }}
       >
-        <div className="container mx-auto w-1/2 h-full flex items-center justify-center">
+        <div className="container mx-auto w-2/3 h-full flex items-center justify-center">
           <div className="text-center">
             {/* <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-hero text-green-800 leading-tight mb-24">
               {currentSlideData.title}
             </h1> */}
-            <p className="bg-white bg-opacity-50 p-2 rounded-lg sm:text-xl md:text-3xl text-green-800 font-subHero leading-relaxed mb-2 duration-1000 opacity-90">
+            <p className="bg-white bg-opacity-50 p-2 rounded-lg sm:text-xl md:text-3xl text-green-800 font-subHero leading-none md:leading-relaxed mb-2 duration-1000 opacity-90">
               {currentHadith}
             </p>
           </div>
