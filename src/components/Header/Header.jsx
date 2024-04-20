@@ -52,7 +52,7 @@ const Header = () => {
         <nav
           className={`md:ml-auto z-50 md:mr-auto absolute md:static flex font-bold flex-col md:flex-row font-hero items-center text-md cursor-pointer justify-center${
             open
-              ? "right-10 bg-green-700 gap-4 p-2 top-36 bg-opacity-90 w-80 rounded-lg transition-all duration-500 ease-in-out"
+              ? "right-10 bg-green-700 gap-4 p-2 top-36 bg-opacity-90 w-80 rounded-lg transition-all duration-500 ease-in-out right-[7%]"
               : "right-[-1000px] transition-all gap-4 top-24 duration-1000 ease-in-out hidden md:flex"
           }`}
         >
