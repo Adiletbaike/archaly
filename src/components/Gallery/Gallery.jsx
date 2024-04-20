@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Carousel } from "react-responsive-carousel";
 import { RiCloseCircleLine } from "react-icons/ri";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -26,22 +26,6 @@ const Gallery = () => {
     setShowCarousel(false);
   };
 
-  // Window boyutunu izle ve carousel'ı kapat
-  useEffect(() => {
-    const handleResize = () => {
-      if (showCarousel && window.innerWidth < 768) {
-        // Cep telefonunda galeri açıkken ekran boyutu 768px'den küçükse carousel'ı kapat
-        setShowCarousel(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, [showCarousel]);
-
   return (
     <section className="bg-[url('/images/credit-bg.jpg')] bg-contain body-font" id="gallery">
       {/* Gallery Title */}
@@ -51,9 +35,9 @@ const Gallery = () => {
         </h1>
       </div>
       <div className="container px-5 py-12 mx-auto">
-        <div className="flex flex-wrap -m-2">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {images.map((image, index) => (
-            <div key={image.id} className="p-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+            <div key={image.id}>
               <img
                 src={image.src}
                 alt={image.alt}
@@ -67,7 +51,7 @@ const Gallery = () => {
         {/* Carousel Modal */}
         {showCarousel && (
           <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-75 flex justify-center items-center z-50">
-            <div className="relative max-w-full max-h-full">
+            <div className="relative w-full max-w-md md:min-w-md h-3/5">
               <Carousel
                 selectedItem={selectedImageIndex}
                 showArrows={true}
