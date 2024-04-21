@@ -18,7 +18,7 @@ const ContactForm = () => {
         "iDRcoB9LSH-CQaoLR"
       );
 
-      toast.success("Ийгиликтүү жөнөтүлдү!!!");
+      toast.success("Ийгиликтүү жиберилди!!!");
     } catch (error) {
       toast.error("Тилекке каршы, билдирүү кеткен жок!!!");
     } finally {
