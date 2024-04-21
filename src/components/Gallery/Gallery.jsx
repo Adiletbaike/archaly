@@ -27,14 +27,27 @@ const Gallery = () => {
   };
 
   return (
-    <section className="bg-[url('/images/credit-bg.jpg')] bg-contain body-font" id="gallery">
+    <section
+      className="bg-[url('/images/credit-bg.jpg')] bg-contain body-font"
+      id="gallery"
+    >
       {/* Gallery Title */}
-      <div className="flex flex-col text-center w-full pt-12">
+      <div
+        className="flex flex-col text-center w-full pt-12"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        data-aos-duration="2000"
+      >
         <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 font-hero">
           Cүрөттөр
         </h1>
       </div>
-      <div className="container px-5 py-12 mx-auto">
+      <div
+        className="container px-5 py-12 mx-auto"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        data-aos-duration="2000"
+      >
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
           {images.map((image, index) => (
             <div key={image.id}>

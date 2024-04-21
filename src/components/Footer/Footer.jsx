@@ -4,7 +4,12 @@ import { Link } from "react-scroll";
 const Footer = () => {
   return (
     <footer className="bg-gray-800 body-font" id="footer">
-      <div className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+      <div
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        data-aos-duration="2000"
+        className="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col"
+      >
         <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
           <Link
             to="hero"

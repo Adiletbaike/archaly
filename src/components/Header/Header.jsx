@@ -2,15 +2,20 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { RiMenu4Fill } from "react-icons/ri";
 import { RiCloseCircleLine } from "react-icons/ri";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const Header = () => {
   useEffect(() => {
+    AOS.init({ once: true });
     const internalLinks = document.querySelectorAll('a[href^="#"]');
     internalLinks.forEach((link) => {
       link.addEventListener("click", smoothScroll);
     });
   }, []);
-
+  useEffect(() => {
+    AOS.refresh();
+  });
   const smoothScroll = (e) => {
     e.preventDefault();
     const targetId = e.target.getAttribute("href").substring(1);
@@ -29,9 +34,12 @@ const Header = () => {
       id="header"
     >
       <div>
-        <p className="bg-white bg-opacity-50 tracking-widest flex justify-center text-xs p-1 text-center md:text-sm">
-          Кыргыз республикасы, Аламүдүн району, Арчалы айылы, Көчөк көчөсү,
-          88а
+        <p
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          className="bg-white bg-opacity-50 tracking-widest flex justify-center text-xs p-1 text-center md:text-sm"
+        >
+          Кыргыз республикасы, Аламүдүн району, Арчалы айылы, Көчөк көчөсү, 88а
         </p>
       </div>
       <div className="container mx-auto flex flex-wrap p-2 md:flex-row items-center">
@@ -52,9 +60,11 @@ const Header = () => {
         <nav
           className={`md:ml-auto z-50 md:mr-auto absolute md:static flex font-bold flex-col md:flex-row font-hero items-center text-md cursor-pointer justify-center${
             open
-              ? "right-10 bg-green-700 gap-4 p-2 top-36 bg-opacity-90 w-80 rounded-lg transition-all duration-500 ease-in-out right-[7%]"
+              ? "md:right-0 bg-green-700 gap-4 p-2 top-36 bg-opacity-90 w-80 rounded-lg transition-all duration-500 ease-in-out right-[7%]"
               : "right-[-1000px] transition-all gap-4 top-24 duration-1000 ease-in-out hidden md:flex"
           }`}
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
         >
           <Link
             spy={true}

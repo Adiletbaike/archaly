@@ -6,7 +6,12 @@ const Teacher = () => {
       className="bg-[url('/images/credit-bg.jpg')] bg-contain bg-center body-font"
       id="teacher"
     >
-      <div className="container px-5 py-10 mx-auto">
+      <div
+        className="container px-5 py-10 mx-auto"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+        data-aos-duration="2000"
+      >
         <div className="flex flex-col text-center w-full mb-10">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900 font-hero">
             Мугалимдер

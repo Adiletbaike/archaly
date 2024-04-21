@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MdContentCopy } from "react-icons/md";
 import { FaCheck } from "react-icons/fa";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+import "aos/dist/aos.css";
+import AOS from "aos";
 
 const CreditCard = () => {
+  useEffect(() => {
+    AOS.init({ once: true }); // AOS'u başlat
+  }, []);
   const [optima, setOptime] = useState("4169585355597583");
   const [mBank, setMBank] = useState("996507459540");
   const [copySuccess, setCopySuccess] = useState({
@@ -24,14 +29,24 @@ const CreditCard = () => {
       id="rekvizit"
     >
       <div className="container mx-auto flex px-5 py-10 md:flex-row flex-col items-center">
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <div
+          className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          data-aos-duration="2000"
+        >
           <img
             className="object-cover object-center rounded lg:h-[400px] m-auto"
             alt="credit"
             src="/images/credit.png"
           />
         </div>
-        <div className="lg:flex-grow md:w-1/2 lg:pl-10 md:pl-16 flex flex-col md:items-center md:text-left items-center text-center">
+        <div
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-center"
+          data-aos-duration="2000"
+          className="lg:flex-grow md:w-1/2 lg:pl-10 md:pl-16 flex flex-col md:items-center md:text-left items-center text-center"
+        >
           <h1 className="title-font sm:text-4xl text-3xl mb-4 mx-auto font-hero text-gray-900">
             Банктык эсептер
           </h1>
@@ -139,7 +154,12 @@ const CreditCard = () => {
               </div>
             </div>
             <div className="bg-black p-2 rounded-xl bg-opacity-25 w-[300px] mx-auto  h-[110px]">
-              <img src="/images/mbank.svg" alt="" style={{ height: "40px" }} className="mx-auto"/>
+              <img
+                src="/images/mbank.svg"
+                alt=""
+                style={{ height: "40px" }}
+                className="mx-auto"
+              />
               <div className="flex justify-around items-center mt-4">
                 <p className="mx-auto no-underline">{mBank}</p>
                 <CopyToClipboard
