@@ -26,7 +26,7 @@ const HeroSlider = ({ slides, hadith }) => {
     const hadithInterval = setInterval(() => {
       const newIndex = (currentHadithIndex + 1) % hadith.length;
       setCurrentHadithIndex(newIndex);
-    }, 4000); 
+    }, 10000); 
     return () => clearInterval(hadithInterval);
   }, [currentHadithIndex, hadith.length]);
 

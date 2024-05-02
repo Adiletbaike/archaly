@@ -8,9 +8,13 @@ const Gallery = () => {
     { id: 1, src: "/images/IMG_1.JPG", alt: "Image 1" },
     { id: 2, src: "/images/IMG_2.JPG", alt: "Image 2" },
     { id: 3, src: "/images/IMG_3.JPG", alt: "Image 3" },
-    { id: 4, src: "/images/IMG_1.JPG", alt: "Image 1" },
-    { id: 5, src: "/images/IMG_2.JPG", alt: "Image 2" },
-    { id: 6, src: "/images/IMG_3.JPG", alt: "Image 3" },
+    { id: 4, src: "/images/IMG_4.JPG", alt: "Image 4" },
+    { id: 5, src: "/images/IMG_5.JPG", alt: "Image 5" },
+    { id: 6, src: "/images/IMG_6.JPG", alt: "Image 6" },
+    { id: 7, src: "/images/IMG_7.JPG", alt: "Image 7" },
+    { id: 8, src: "/images/IMG_8.JPG", alt: "Image 8" },
+    { id: 9, src: "/images/IMG_9.JPG", alt: "Image 9" },
+    // { id: 10, src: "/images/IMG_10.JPG", alt: "Image 10" },
     // Add more images as needed
   ];
 
