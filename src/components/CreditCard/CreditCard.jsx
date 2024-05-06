@@ -155,7 +155,7 @@ const CreditCard = () => {
             </div>
             <div className="bg-black p-2 rounded-xl bg-opacity-25 w-[300px] mx-auto  h-[110px]">
               <a
-                href="https://app.mbank.kg/qr/#00020101021132570012c2c.mbank.kg01020210129967705172831109%D0%94%D0%90%D0%9D%D0%98%D0%AF%D0%A0%20%D0%90.1302123409%D0%94%D0%90%D0%9D%D0%98%D0%AF%D0%A0%20%D0%90.5204999953034175910DANIIaR%20A.6304d49d"
+                href="https://app.mbank.kg/qr/#00020101021132560012c2c.mbank.kg01020210129965531061661108%D0%98%D0%9C%D0%A0%D0%90%D0%9D%20%D0%90.1302123408%D0%98%D0%9C%D0%A0%D0%90%D0%9D%20%D0%90.5204999953034175908IMRAN%20A.63047a63"
                 className="cursor-pointer"
               >
                 <img
