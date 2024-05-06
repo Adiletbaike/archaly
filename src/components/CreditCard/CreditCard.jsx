@@ -154,12 +154,17 @@ const CreditCard = () => {
               </div>
             </div>
             <div className="bg-black p-2 rounded-xl bg-opacity-25 w-[300px] mx-auto  h-[110px]">
-              <img
-                src="/images/mbank.svg"
-                alt=""
-                style={{ height: "40px" }}
-                className="mx-auto"
-              />
+              <a
+                href="https://app.mbank.kg/qr/#00020101021132570012c2c.mbank.kg01020210129967705172831109%D0%94%D0%90%D0%9D%D0%98%D0%AF%D0%A0%20%D0%90.1302123409%D0%94%D0%90%D0%9D%D0%98%D0%AF%D0%A0%20%D0%90.5204999953034175910DANIIaR%20A.6304d49d"
+                className="cursor-pointer"
+              >
+                <img
+                  src="/images/mbank.svg"
+                  alt=""
+                  style={{ height: "40px" }}
+                  className="mx-auto"
+                />
+              </a>
               <div className="flex justify-around items-center mt-4">
                 <p className="mx-auto no-underline">{mBank}</p>
                 <CopyToClipboard
